@@ -25,6 +25,9 @@ function calculate() {
 	var ans = 0;
 
 	// TODO: Handle addition, subtraction, multiplication, and division.
+	if(radios[0].checked){
+		ans = x+y;
+	}
 
 	// Log the equation.
 	console.log(x + " " + op + " " + y + " = " + ans);
