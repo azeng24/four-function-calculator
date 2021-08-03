@@ -31,6 +31,8 @@ function calculate() {
 		ans = x-y;
 	} else if(radios[2].checked){
 		ans = x*y;
+	} else if(radios[3].checked){
+		ans = x/y;
 	}
 
 	// Log the equation.
