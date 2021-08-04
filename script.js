@@ -30,9 +30,15 @@ function calculate() {
 	} else if(radios[1].checked){
 		ans = x-y;
 	} else if(radios[2].checked){
-		ans = x*y;
+		for(var i = 0; i<y; i++) ans+=x;
 	} else if(radios[3].checked){
-		ans = x/y;
+		var x1 = x
+		while(x1>=y){
+			ans+=1;
+			x1-=y;
+		}
+		if(x1!=0)
+		ans = ans + " R"+x1;
 	}
 
 	// Log the equation.
